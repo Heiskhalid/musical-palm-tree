@@ -89,6 +89,8 @@ body{
     justify-content: center;
 }
 
+
+
 #navbar li{
     list-style: none;
     padding: 0 20px;
@@ -106,7 +108,11 @@ body{
 #navbar li a:hover,
 #navbar li a.active{
     color: #088178;
-     
+}
+
+#mobile{
+    display: none;
+    align-items: center;
 }
 
 #navbar li a.active::after,
@@ -370,7 +376,7 @@ body{
     align-items: flex-start;
     padding: 30px;
     background-image: url(./assets/images/banner/b1.jpeg);
-    min-width: 580px;
+    min-width: 80px;
     height: 50vh;
     background-size: cover;
     background-position: center;
@@ -497,4 +503,229 @@ body{
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 
+}
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+   margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+}
+
+footer .follow i{
+    color: #465b46;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install{
+    display: flow;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+
+#close{
+    display: none;
+}
+
+/* media queries */
+@media (max-width:799px){
+    .section-p1{
+        padding: 40px 80px;
+    }
+
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;    
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+
+    #navbar.active{
+     right: 0;
+        
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag{
+        display: none;
+    }
+
+    #hero{
+        height: 70vh;
+        padding: 0 80px ;
+        background-position: top 30%  right 30% ;
+    }
+    
+    #feature{
+        justify-content:center ;
+    }
+
+    #feature .fe-box{
+        margin: 15px 15px;
+    }
+
+    #product .pro-container{
+        justify-content: center;
+    }
+
+    #product .pro{
+        margin: 15px;
+    }
+
+    #banner{
+        height: 20vh;
+    }
+    #sm-banner .banner-box{
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner3{
+        padding: 0 110px;
+    }
+
+    #banner .banner-box{
+        min-width:  28px;
+    }
+
+    #newsletter .form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 477px) {
+    .section-p1{
+        padding: 20px;
+    }
+    #header{
+        padding: 10px 30px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    #hero{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature{
+            justify-content: space-between;
+    }
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0 ;
+    }
+
+    #product .pro{
+        width: 100%;
+    }
+    #banner{
+        height: 40vh;
+    }
+    #sm-banner{
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box2{
+        margin-top: 20px;
+    }
+
+    #banner3{
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box{
+        width: 100%;
+
+    }
+    
+    #newsletter{
+        padding: 40px 20px;
+    }
+
+    #newsletter .form{
+        width: 100%;
+    }
+
+    footer .copyright{
+            text-align: start;
+    }
 }
